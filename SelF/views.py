@@ -13,3 +13,6 @@ def signup(response):
         form = RegisterForm()
     
     return render(response, "registration/signup.html", {"form":form})
+
+def welcome(request):
+    return redirect('login')
